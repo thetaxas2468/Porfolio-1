@@ -2,13 +2,11 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import githubLog from "../assets/img/GitHub-Mark.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import { useState } from "react";
 // import 'animate.css';
 // import TrackVisibility from 'react-on-screen';
 
 
 export const Projects = () => {
-    const [isVisible, setIsVisible] = useState(false);
     const projects = [
         {
             title: " beyond08-group3",
@@ -72,7 +70,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="fourth">About Me</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                            <Tab.Content id="slideInUp">
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
@@ -89,7 +87,7 @@ export const Projects = () => {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
                                     <h2>October 2022 – February 2023 Software Engineer withRedHat Beyond (Internship)</h2>
-                                    <p>Worked in a team that contain five people including me embarked on a
+                                    <h5>Worked in a team that contain five people including me embarked on a
                                         challenging journey to develop an open-source web application from
                                         scratch.<br></br><hr></hr>
                                         Worked with the guidance of four experienced Redhat mentors, the
@@ -103,12 +101,13 @@ export const Projects = () => {
                                         served as our primary communication tool.<br></br><hr></hr>
                                         The team's dedication, hard work, and technical proficiency resulted in
                                         a successful and impressive outcome, showcasing our expertise in
-                                        software development<br></br><hr></hr></p>
+                                        software development.<br></br><hr></hr>
+                                    </h5>
                                     <hr></hr>
                                     <h2>October 2022 - Present Homework checking at Tel-Hai College</h2>
                                     <p>Automata and formal languages, Advanced course in Linux software,
                                         Data structures, Numerical system and logical design, Algorithms
-                                        and Python.<br></br><hr></hr>
+                                        and Python.<br></br>
                                     </p>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
@@ -118,6 +117,7 @@ export const Projects = () => {
                                     <p>Obtained the BSc degree with GPA 93% (Excellence in a
                                         final project by RedHat Company with GPA 100%).
                                     </p>
+                                    <hr></hr>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="fourth">
                                     <h5>Strong engineering professional with a
@@ -134,14 +134,13 @@ export const Projects = () => {
                                         NodeJS, C#, SQL, NoSQL, C, Java, Python
                                         etc.
                                     </h5>
-                                    <hr></hr>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            <img className="background-image-right" src={colorSharp2} alt="img"></img>
         </section>
 
     )

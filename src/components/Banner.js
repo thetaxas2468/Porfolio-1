@@ -52,12 +52,12 @@ export const Banner = () => {
                         <span>
                             Welcome to my Portfolio
                         </span>
-                        <h1>{"Hi i am karam and i am a "}<span className="wrap">{text}</span></h1>
+                        <h1>{"Hi i am Karam and i am a "}<span className="wrap">{text}</span></h1>
                         <p>About me</p>
                         <button onClick={() => console.log("lets Connect")}>Lets Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImage} alt="Header Image"></img>
+                        <img src={headerImage} alt="Header Img"></img>
                     </Col>
                 </Row>
             </Container>
