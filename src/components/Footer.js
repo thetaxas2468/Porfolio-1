@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap"
-import logo from "../assets/img/logo.svg";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -14,12 +13,9 @@ export const Footer = () => {
         <footer className="footer pt-5">
             <Container>
                 <Row className="align-items-center">
-                    <Col sm={6}>
-                        <img src={logo} alt="img"></img>
-                    </Col>
-                    <Col sm={6} className="text-center text-sm-end">
+                    <Col sm={12} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/karam-jbareen-b9206b218/">
+                            <a href="https://www.linkedin.com/in/karam-eek-b9206b218/">
                                 <img src={navIcon1} alt="img"></img>
                             </a>
                             <a href="https://github.com/thetaxas2468">
@@ -32,7 +28,9 @@ export const Footer = () => {
                                 <img src={navIcon2} alt="img"></img>
                             </a>
                         </div>
-                        <p>CopyRight 2023. TAXAS</p>
+                        {/* <div className="footer_p"> */}
+                            <p>CopyRight 2023.</p>
+                        {/* </div> */}
                     </Col>
                 </Row>
             </Container>

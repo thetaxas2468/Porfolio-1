@@ -2,6 +2,11 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import githubLog from "../assets/img/GitHub-Mark.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import beyond from "../assets/img/beyond.png";
+import school from "../assets/img/school.png";
+import camp from "../assets/img/camp.webp";
+import homework from "../assets/img/homwork.jpg";
+import redx from "../assets/img/redux.png"
 // import 'animate.css';
 // import TrackVisibility from 'react-on-screen';
 
@@ -11,32 +16,32 @@ export const Projects = () => {
         {
             title: " beyond08-group3",
             description: "a web application that is supposed to help people group up, and organize a joint food purchase. Doing so, we remove the middlemen and reduce the price of the food products.",
-            imgUrl: githubLog,
+            imgUrl: beyond,
         },
         {
             title: "School-Social-Network-Website",
             description: "School website with registration needed as a student or teacher, it is a site that has the ability to communicate between the users via posts, notifications, relevant videos and class reminders",
-            imgUrl: githubLog,
+            imgUrl: school,
         },
         {
             title: "CampApp",
             description: "CampSite is a user-friendly platform that allows registered users to explore and discover new camping locations across the globe. Our platform provides a unique experience for users to browse throu…",
-            imgUrl: githubLog,
+            imgUrl: camp,
         },
         {
             title: "AutomationChecker",
             description: "Desktop application for the teacher to use in order to check and grade the students homework.",
-            imgUrl: githubLog,
+            imgUrl: homework,
         },
         {
             title: "ModernReact_NoRedux",
             description: "A repo that has folders and each folder is an application that is created using modern ReactJS without the use of redux.",
-            imgUrl: githubLog,
+            imgUrl: redx,
         },
         {
             title: "ModernReact_WithRedux",
             description: "React sites using Redux and Redux toolkit",
-            imgUrl: githubLog,
+            imgUrl: redx,
         },
         {
             title: "Other",
